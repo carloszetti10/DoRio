@@ -1,0 +1,220 @@
+/* Estilo para a barra superior */
+.barraSuperior{
+    -fx-background-color:#fff; /* Cor de fundo branca */
+    -fx-border-color:#000; /* Cor da borda preta */
+    -fx-border-width:.4px .4px .2px .4px; /* Espessura das bordas */
+}
+
+/* Estilo para a semi barra */
+.semiBarra{
+    -fx-background-color:#efefef; /* Cor de fundo cinza claro */
+    -fx-border-color:#000; /* Cor da borda preta */
+    -fx-border-width:.2px .4px .8px .4px; /* Espessura das bordas */
+}
+
+/* Estilo para o botão de fechar */
+.close{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.close:hover{
+    -fx-background-color:#ff3547; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o botão de minimizar */
+.minimize{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.minimize:hover{
+    -fx-background-color:#ddd; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o fundo do menu */
+.fundoMenu{ 
+    -fx-background-color:linear-gradient(to bottom right, #272b3f,  #0f89ca); /* Gradiente azul */
+}
+
+/* Estilo para os botões do menu */
+
+.bntMenu{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size:20px; /* Tamanho da fonte */
+    -fx-alignment:CENTER-LEFT; /* Alinhamento à esquerda */
+    -fx-background-color: linear-gradient(to bottom right, #272b3f,  #0f89ca);
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+
+.bntMenu:hover{
+    -fx-background-color:linear-gradient(to bottom right,  #1b1e25 ,#0b71a7); /* Cor ao passar o mouse */
+}
+
+/* Cor ao clicar */
+.bntMenu:pressed, .bntMenu:focused {
+    -fx-background-color: linear-gradient(to bottom right, #1b1e25 ,#0b71a7);
+}
+
+/* Estilo para o botão de logout */
+.bntCad{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size:20px; /* Tamanho da fonte */
+    -fx-alignment:CENTER; /* Alinhamento à esquerda */
+    -fx-background-color: linear-gradient(to bottom right, #01703b, #00bf63);
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+.bntCad:hover{
+    -fx-background-color: linear-gradient(to bottom right, #035a30, #04954f); /* Cor ao passar o mouse */
+}
+
+
+.bntExcl{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size:20px; /* Tamanho da fonte */
+    -fx-alignment:CENTER; 
+    -fx-background-color: linear-gradient(to bottom right,  #c71b0a, #ff1700);
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+
+.bntExcl:hover{
+    -fx-background-color: linear-gradient(to bottom right, #b91808, #95190d); /* Cor ao passar o mouse */
+}
+
+
+.bntAtual{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-cursor:hand; /* Cursor de mão */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size:20px; /* Tamanho da fonte */
+    -fx-alignment:CENTER; 
+    -fx-background-color: linear-gradient(to bottom right, #d3793f, #f78c47);
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+
+.bntAtual:hover{
+    -fx-background-color: linear-gradient(to bottom right, #aa5c2d, #d3793f); /* Cor ao passar o mouse */
+}
+
+/* Efeito de sombra */
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+/* Fundo branco com bordas arredondadas */
+.white-bg{
+    -fx-background-color:#fff; /* Fundo branco */
+    -fx-background-radius:8px; /* Bordas arredondadas */
+}
+
+/* Estilo para cartões */
+.card{
+    -fx-background-color:linear-gradient(to right, #2b303c, #0f89ca); /* Gradiente azul */
+    -fx-background-radius:5px; /* Bordas arredondadas */
+}
+
+
+/* Estilo dos campos de texto */
+.textfield{
+    -fx-background-color:linear-gradient(to bottom, #efefef, #eee); /* Gradiente de fundo */
+    -fx-border-color:linear-gradient(to bottom right, #0f89ca, #0f89ca); /* Gradiente nas bordas */
+    -fx-border-width:.8px; /* Espessura das bordas */
+    -fx-font-family:"Tahoma"; /* Fonte Tahoma */
+    -fx-border-radius:4px; /* Bordas arredondadas */
+}
+.textfield:focused{
+    -fx-border-width:1.8px; /* Espessura das bordas ao focar */
+    -fx-background-color:#fff; /* Fundo branco ao focar */
+}
+
+.campoInvisivel{
+    -fx-opacity: 0; /* Torna o campo completamente invisível */
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-border-color: transparent; /* Borda transparente */
+    -fx-font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para pesquisa */
+.pesquisa{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-border-color:linear-gradient(to bottom right, #0f89ca, #0f89ca); /* Gradiente nas bordas */
+    -fx-border-radius:5px; /* Bordas arredondadas */
+    -fx-font-size:13px; /* Tamanho da fonte */
+    -fx-font-family:"Arial"; /* Fonte Arial */
+    -fx-border-width:1px; /* Espessura das bordas */
+    -fx-padding:0px 0px 0px 28px; /* Preenchimento */
+}
+.pesquisa:focused{
+    -fx-border-width:2px; /* Espessura das bordas ao focar */
+}
+
+
+/* Estilo para rótulos informativos */
+.label-info{
+    -fx-background-color:transparent; /* Fundo transparente */
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51); /* Gradiente nas bordas */
+    -fx-border-radius:4px; /* Bordas arredondadas */
+    -fx-padding:0px 0px 0px 8px; /* Preenchimento */
+}
+
+
+
+
+
+/* Estilo para a tabela */
+.table-view {
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-border-color: #000; /* Linha preta ao redor da tabela */
+    -fx-border-width: 1px; /* Espessura da borda da tabela */
+    -fx-border-radius: 8px; /* Bordas arredondadas */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para a tabela */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilo para o cabeçalho da coluna */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #272b3f, #0f89ca); /* Gradiente azul para cabeçalhos */
+    -fx-border-color: #000; /* Linha preta na parte inferior do cabeçalho */
+    -fx-border-width: 0 0 1px 0; /* Apenas linha inferior */
+    -fx-background-insets: 0 0 0 0; /* Sem insets */
+    -fx-background-radius: 8px 8px 0px 0px; /* Bordas arredondadas no topo */
+}
+
+/* Estilo para o cabeçalho e filtros */
+.table-view .column-header, .filter {
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte do cabeçalho */
+    -fx-size: 40px; /* Altura do cabeçalho */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para cabeçalho e filtros */
+}
+
+/* Estilo do texto no cabeçalho */
+.table-view .column-header .label {
+    -fx-text-fill: #fff; /* Cor do texto no cabeçalho */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para o texto do cabeçalho */
+}
+
+/* Estilo para as linhas ímpares e pares com cores estilo Excel */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #ffffff; /* branco */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linhas ímpares */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linhas ímpares */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #f0f0f0; /* Cinza claro (similar ao Excel) */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linhas pares */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linhas pares */
+}
+
+/* Estilo para a linha selecionada */
+.table-view .table-row-cell:selected {
+     -fx-background-color: linear-gradient(to bottom right, #272b3f, #0f89ca); 
+    -fx-text-fill: white; /* Cor do texto ao selecionar */
+    -fx-font-family: "Nefrito"; /* Fonte Nefrito para linha selecionada */
+    -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linha selecionada */
+}

@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MeuFxmlContrller">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MeuFxmlContrller">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="1057.0">
          <children>
@@ -356,53 +356,6 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="telaRetiradasSemDev" prefHeight="783.0" prefWidth="1169.0">
-                           <children>
-                              <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="771.0" prefWidth="1157.0">
-                                 <children>
-                                    <AnchorPane layoutY="1.0" prefHeight="765.0" prefWidth="1147.0">
-                                       <children>
-                                          <TableView fx:id="semDevTabelaRetirada" layoutX="10.0" layoutY="100.0" prefHeight="658.0" prefWidth="1126.0">
-                                             <columns>
-                                                <TableColumn fx:id="semDevPessoa" prefWidth="336.0" text="Pessoa" />
-                                                <TableColumn fx:id="semDevEqui" minWidth="0.0" prefWidth="240.0" text="Equipamento" />
-                                                <TableColumn fx:id="semDevQuant" minWidth="0.0" prefWidth="278.0" text="Quantidade" />
-                                                <TableColumn fx:id="semDevDia" prefWidth="269.0" text="Dia da Retirada" />
-                                                <TableColumn fx:id="semDevId" minWidth="0.0" prefWidth="1.0" text="id" />
-                                             </columns>
-                                          </TableView>
-                                          <TextField fx:id="semDevCampoPesquisa" layoutX="14.0" layoutY="62.0" onKeyTyped="#PesquisarRetSemdev" prefHeight="30.0" prefWidth="261.0" promptText="Pesquisar nome equipamento:" styleClass="pesquisa" />
-                                          <Button layoutX="921.0" layoutY="47.0" mnemonicParsing="false" onAction="#gerarPdf" prefHeight="27.0" prefWidth="214.0" text="Gerar PDF" textFill="WHITE">
-                                             <font>
-                                                <Font name="System Bold" size="20.0" />
-                                             </font>
-                                             <styleClass>
-                                                <String fx:value="bntAtual" />
-                                                <String fx:value="shadow" />
-                                             </styleClass>
-                                             <graphic>
-                                                <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
-                                             </graphic>
-                                          </Button>
-                                          <Label layoutX="456.0" layoutY="14.0" prefHeight="51.0" prefWidth="235.0" text="Tabela de retiradas" textFill="#111111">
-                                             <font>
-                                                <Font name="Tahoma Bold" size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <styleClass>
-                                          <String fx:value="white-bg" />
-                                          <String fx:value="shadow" />
-                                       </styleClass>
-                                    </AnchorPane>
-                                 </children>
-                                 <styleClass>
-                                    <String fx:value="shadow" />
-                                    <String fx:value="white-bg" />
-                                 </styleClass>
-                              </AnchorPane>
-                           </children>
-                        </AnchorPane>
                         <AnchorPane fx:id="retiradasTelas" prefHeight="783.0" prefWidth="1167.0">
                            <children>
                               <AnchorPane layoutX="8.0" layoutY="10.0" prefHeight="766.0" prefWidth="1152.0">
@@ -469,6 +422,53 @@
                                  <styleClass>
                                     <String fx:value="white-bg" />
                                     <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="telaRetiradasSemDev" prefHeight="783.0" prefWidth="1169.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="771.0" prefWidth="1157.0">
+                                 <children>
+                                    <AnchorPane layoutY="1.0" prefHeight="765.0" prefWidth="1147.0">
+                                       <children>
+                                          <TableView fx:id="semDevTabelaRetirada" layoutX="10.0" layoutY="100.0" prefHeight="658.0" prefWidth="1126.0">
+                                             <columns>
+                                                <TableColumn fx:id="semDevPessoa" prefWidth="336.0" text="Pessoa" />
+                                                <TableColumn fx:id="semDevEqui" minWidth="0.0" prefWidth="240.0" text="Equipamento" />
+                                                <TableColumn fx:id="semDevQuant" minWidth="0.0" prefWidth="278.0" text="Quantidade" />
+                                                <TableColumn fx:id="semDevDia" prefWidth="269.0" text="Dia da Retirada" />
+                                                <TableColumn fx:id="semDevId" minWidth="0.0" prefWidth="1.0" text="id" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="semDevCampoPesquisa" layoutX="14.0" layoutY="62.0" onKeyTyped="#PesquisarRetSemdev" prefHeight="30.0" prefWidth="261.0" promptText="Pesquisar nome equipamento:" styleClass="pesquisa" />
+                                          <Button layoutX="921.0" layoutY="47.0" mnemonicParsing="false" onAction="#gerarPdf" prefHeight="27.0" prefWidth="214.0" text="Gerar PDF" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="bntAtual" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <graphic>
+                                                <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Label layoutX="456.0" layoutY="14.0" prefHeight="51.0" prefWidth="235.0" text="Tabela de retiradas" textFill="#111111">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
                                  </styleClass>
                               </AnchorPane>
                            </children>

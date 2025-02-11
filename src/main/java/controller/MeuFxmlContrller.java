@@ -25,6 +25,7 @@ import model.ComboItem;
 import model.DetalheRetirada;
 import model.DetalhesRetiradasSemDevolucao;
 import model.Equipamento;
+import model.GerarPdf;
 import model.Mensagem;
 import model.Pessoa;
 import view.Main;
@@ -256,6 +257,14 @@ public class MeuFxmlContrller implements Initializable {
     
     @FXML
     void gerarPdf(ActionEvent event) {
+        try {
+            GerarPdf pdf = new GerarPdf();
+            Stage stage = null;
+            // Chama o método real que gera o PDF
+            pdf.gerarPDF(stage, getSemDevTabelaRetirada());
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
     }
 
     

@@ -34,6 +34,7 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>17</version>
+            <type>jar</type>
         </dependency>
 
         <!-- Dependência para gráficos -->
@@ -49,7 +50,13 @@
             <artifactId>postgresql</artifactId>
             <version>42.5.1</version>
         </dependency>
-
+        <dependency>
+           <groupId>com.itextpdf</groupId>
+           <artifactId>itextpdf</artifactId>
+           <version>5.5.13.3</version> <!-- Versão mais recente do iText 5 -->
+           <scope>compile</scope>
+        </dependency>
+        
     </dependencies>
 
     <build>

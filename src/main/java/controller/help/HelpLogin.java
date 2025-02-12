@@ -30,6 +30,7 @@ public class HelpLogin {
 
     public void verificarUsuario(ActionEvent event) {
         //pegar dados da view 
+        controller.getTextErroLogin().setText("");
         String usuarioDado = controller.getCampoUsuario().getText();
         String senhaDada = controller.getCompoSenha().getText(); 
         //verivicar se tem no banco
@@ -37,12 +38,29 @@ public class HelpLogin {
         Usuario usuarioBanco = dao.selectUsuario();
         System.out.println(usuarioDado);
         if (usuarioDado == null || senhaDada == null || usuarioDado.isEmpty() || senhaDada.isEmpty()){
-            Mensagem.mostrarDialogoAviso("", "", "Preencha todos os campos!");
+            setarVermelho(usuarioDado, senhaDada);
+            controller.getTextErroLogin().setText("Preencha todos os campos!");
+            //Mensagem.mostrarDialogoAviso("", "", "Preencha todos os campos!");
         } else if(usuarioDado.equals(usuarioBanco.getUsuario()) && senhaDada.equals(usuarioBanco.getSenha())){
             Main m = new Main();
             m.abrirMenu(event);
         } else{
-            Mensagem.mostrarDialogoErro("", "", "Usuario inválido!");
+            controller.getTextErroLogin().setText("Usuario inválido!");
+            controller.getCampoUsuario().setText(""); 
+            controller.getCompoSenha().setText(""); 
+            //Mensagem.mostrarDialogoErro("", "", "Usuario inválido!");
         }
     } 
+    
+    
+    public void setarVermelho(String u, String s){
+        if (u.isEmpty()) {
+            controller.getCampoUsuario().setStyle("-fx-border-color: #ff0000;");  // Borda vermelha
+        }
+        if (s.isEmpty()) {
+           controller.getCompoSenha().setStyle("-fx-border-color: #ff0000;");  // Texto vermelho
+        }  
+    }
+   
+
 }

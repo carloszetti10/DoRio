@@ -16,19 +16,19 @@
            <right>
                <AnchorPane prefHeight="500.0" prefWidth="418.0" BorderPane.alignment="CENTER">
                    <children>
-                       <TextField fx:id="campoUsuario" layoutX="114.0" layoutY="209.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #272b3f; -fx-border-width: 0px 0px 2px 0px;" />
-                       <PasswordField fx:id="compoSenha" layoutX="114.0" layoutY="262.0" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: #272b3f; -fx-border-width: 0px 0px 2px 0px;" />
+                       <TextField fx:id="campoUsuario" layoutX="114.0" layoutY="209.0" promptText="Usuario" style="-fx-alignment: ;" styleClass="textfieldLogin" />
+                       <PasswordField fx:id="compoSenha" layoutX="114.0" layoutY="262.0" promptText="Senha" styleClass="textfieldLogin" />
                        
                        
-                       <Button layoutX="140.0" layoutY="345.0" mnemonicParsing="false" onAction="#fazerLogin" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #272b3f;" text="Login" textFill="WHITE">
+                       <Button layoutX="138.0" layoutY="323.0" mnemonicParsing="false" onAction="#fazerLogin" prefHeight="40.0" prefWidth="101.0" styleClass="bntLogin" text="Login" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
                        
-                       <Text fill="#272b3f" layoutX="158.0" layoutY="159.0" text="Login">
+                       <Text fill="#272b3f" layoutX="162.0" layoutY="161.0" text="Login">
                            <font>
-                               <Font size="18.0" />
+                               <Font name="System Bold" size="20.0" />
                            </font>
                        </Text>
                   <Button fx:id="close" layoutX="346.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="60.0" styleClass="close">
@@ -43,6 +43,22 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="78.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="78.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="170.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/usuarios.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="textErroLogin" fill="RED" layoutX="66.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelErro" wrappingWidth="244.8000259399414" />
                    </children>
                </AnchorPane>
            </right>

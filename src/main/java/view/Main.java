@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -36,6 +37,7 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
+        iconeTela(stage);
         stage.show();
     }
     
@@ -88,7 +90,7 @@ public class Main extends Application {
         // Adiciona a cena ao novo stage
         Scene scene = new Scene(root);
         loginStage.setScene(scene);
-        
+        iconeTela(loginStage);
         // Exibe a nova janela de login
         loginStage.show();
         
@@ -99,6 +101,20 @@ public class Main extends Application {
     } catch (IOException ex) {
         ex.printStackTrace();
     }
+    }
+   
+   // Método para definir o ícone da janela
+    private void iconeTela(Stage stage) {
+        try {
+            // Carregar o ícone da imagem
+            Image iconeTitulo = new Image(getClass().getResourceAsStream("/img/logozettiPequena.png"));
+            
+            // Definindo o ícone para a janela
+            stage.getIcons().add(iconeTitulo);
+            
+        } catch (Exception ex) {
+            System.err.println("Erro ao importar o ícone: " + ex.getMessage());
+        }
     }
     
 }

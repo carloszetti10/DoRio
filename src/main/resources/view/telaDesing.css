@@ -35,6 +35,13 @@
     -fx-background-color:linear-gradient(to bottom right, #272b3f,  #0f89ca); /* Gradiente azul */
 }
 
+.bntLogin{
+    -fx-background-color: #272b3f;
+    -fx-cursor:hand; /* Cursor de mão */
+}
+.bntLogin:hover{
+    -fx-background-color:#0f89ca; 
+}
 /* Estilo para os botões do menu */
 
 .bntMenu{
@@ -161,6 +168,13 @@
     -fx-padding:0px 0px 0px 8px; /* Preenchimento */
 }
 
+.labelErro {
+    -fx-text-fill: #ff0000; /* Cor do texto em vermelho */
+    -fx-font-family: "Tahoma"; /* Fonte Tahoma */
+    -fx-font-size: 16px; /* Tamanho da fonte */
+   -fx-text-alignment: center; /* Alinha o texto ao centro dentro do Label */
+
+}
 
 
 
@@ -218,3 +232,16 @@
     -fx-font-family: "Nefrito"; /* Fonte Nefrito para linha selecionada */
     -fx-font-size: 16px; /* Aumenta o tamanho da fonte para linha selecionada */
 }
+
+
+.textfieldLogin {
+    -fx-background-color: transparent; /* Cor de fundo */
+    -fx-border-color:  #272b3f; /* Cor da borda */
+    -fx-border-width: 0px 0px 2px 0px; /* Borda somente inferior de 2px */
+    -fx-font-family: "Arial"; /* Fonte do texto */
+    -fx-text-fill: black; /* Cor do texto */
+    -fx-border-radius: 5px; /* Bordas arredondadas */
+    -fx-padding: 5px; /* Padding dentro do campo */
+}
+
+

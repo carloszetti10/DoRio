@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 
 
@@ -25,6 +26,10 @@ public class LoginViewController implements Initializable {
     public void close() {
         System.exit(0);
     }
+    
+    
+    @FXML
+    private Text textErroLogin;
 
     @FXML
     private TextField campoUsuario;
@@ -67,6 +72,16 @@ public class LoginViewController implements Initializable {
     public HelpLogin getHelp() {
         return help;
     }
+
+    public Text getTextErroLogin() {
+        return textErroLogin;
+    }
+
+    public void setTextErroLogin(Text textErroLogin) {
+        this.textErroLogin = textErroLogin;
+    }
+    
+    
 
 
    

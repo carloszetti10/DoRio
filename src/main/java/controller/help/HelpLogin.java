@@ -6,7 +6,9 @@ package controller.help;
 
 import dao.UsuarioDao;
 import controller.LoginViewController;
+import dao.Conexao;
 import java.io.IOException;
+import java.sql.Connection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -30,6 +32,7 @@ public class HelpLogin {
 
     public void verificarUsuario(ActionEvent event) {
         //pegar dados da view 
+        
         controller.getTextErroLogin().setText("");
         String usuarioDado = controller.getCampoUsuario().getText();
         String senhaDada = controller.getCompoSenha().getText(); 
@@ -60,6 +63,16 @@ public class HelpLogin {
         if (s.isEmpty()) {
            controller.getCompoSenha().setStyle("-fx-border-color: #ff0000;");  // Texto vermelho
         }  
+    }
+    
+    public void verificarConexao(){
+        Conexao c = new Conexao();
+        Connection conexao = c.getConexao();
+        if(conexao!= null){
+            
+        }else{
+            controller.getTextErroLogin().setText("Não consegui conectar no banco de dados, ligue para o zetti.");
+        }
     }
    
 

@@ -279,6 +279,7 @@ public class MeuFxmlContrller implements Initializable {
             telaRetiradasSemDev.setVisible(false);
 
             campoQuantidadeEquipamento.setText("");
+            getComboTipodeEquipamentoRetirada().setStyle("");
             comboTipodeEquipamentoRetirada.setValue(null);
             
         } else if (event.getSource() == bntCadastr0Equipamento) {
@@ -420,6 +421,7 @@ public class MeuFxmlContrller implements Initializable {
     @FXML
     void registrarRetiradaEvent(ActionEvent event) {
         helpRetiradas.cadastrarRetiradasEmprestimo();
+        campoQuantidadeEquipamento.setText("");
         //comboTipodeEquipamentoRetirada.setValue(null);
     }
     
@@ -430,21 +432,31 @@ public class MeuFxmlContrller implements Initializable {
     void comboTipodeEquipamentoRetiradaEvento(ActionEvent event) {
         ComboItem combo = comboTipodeEquipamentoRetirada.getValue();
         if (combo != null) {
-            helpRetiradas.limparCombo();
+            configurarComboPessEqui();
             if(combo.getValor()){
-                helpRetiradas.limparCombo();
+                //configurarComboPessEqui();
                 helpRetiradas.preencherComboboxRetiradaEmprestimo();
             }else{
-                helpRetiradas.limparCombo();
+                //configurarComboPessEqui();
                 helpRetiradas.preencherComboRetiradaSemEmprestimo();
             }
         }else{
-            campoComboPessoa.setValue(null);
-            campoComboEquipamento.setValue(null);
-            helpRetiradas.limparCombo();
+            configurarComboPessEqui();
+            getComboTipodeEquipamentoRetirada().setStyle("");
+
         }
         
     }
+    
+    private void configurarComboPessEqui(){
+        campoComboPessoa.setValue(null);
+        campoComboEquipamento.setValue(null);
+            
+        campoComboPessoa.setEditable(false);
+        campoComboEquipamento.setEditable(false);
+            
+        helpRetiradas.limparCombo();
+    } 
     
 
     //cadastrar pessoas Tela

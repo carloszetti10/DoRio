@@ -41,7 +41,7 @@ public class HelpRetiradas {
             ComboItem tipodeEquipamento = controller.getComboTipodeEquipamentoRetirada().getValue();
             if(tipodeEquipamento == null){
                 controller.getComboTipodeEquipamentoRetirada().setStyle("-fx-border-color: red; -fx-background-color: #ffcccc;");
-                Mensagem.mostrarDialogoAviso("", "", "Preencha todos os campos!"); 
+                Mensagem.mostrarDialogoAviso("", "", "Selecione um tipo de equipamento!"); 
                 return;
             }
             

@@ -172,7 +172,7 @@
     -fx-text-fill: #ff0000; /* Cor do texto em vermelho */
     -fx-font-family: "Tahoma"; /* Fonte Tahoma */
     -fx-font-size: 16px; /* Tamanho da fonte */
-   -fx-text-alignment: center; /* Alinha o texto ao centro dentro do Label */
+    -fx-text-alignment: center; /* Alinha o texto ao centro dentro do Label */
 
 }
 

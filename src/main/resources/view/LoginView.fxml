@@ -58,7 +58,7 @@
                         <Image url="@../img/usuarios.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="textErroLogin" fill="RED" layoutX="66.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelErro" wrappingWidth="244.8000259399414" />
+                  <Text fx:id="textErroLogin" fill="RED" layoutX="9.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelErro" wrappingWidth="395.2000503540039" />
                    </children>
                </AnchorPane>
            </right>

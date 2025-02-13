@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>view.Main</exec.mainClass> <!-- Corrigido para 'Main' com M maiúsculo -->
+        <exec.mainClass>view.App</exec.mainClass> <!-- Corrigido para 'Main' com M maiúsculo -->
     </properties>
 
     <dependencies>
@@ -61,6 +61,21 @@
 
     <build>
         <plugins>
+            
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+               
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>view.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
             <!-- Plugin do Maven para compilar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -85,9 +100,35 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>view.Main</mainClass> <!-- Certifique-se que esse é o nome correto -->
+                    <mainClass>view.App</mainClass> <!-- Certifique-se que esse é o nome correto -->
                 </configuration>
             </plugin>
+            
+
+          
+          
+          <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <transformers>
+                                <transformer implementation=
+                                                     "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>view.App</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+                
         </plugins>
     </build>
 </project>

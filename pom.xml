@@ -61,21 +61,6 @@
 
     <build>
         <plugins>
-            
-            
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-               
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>view.App</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
             <!-- Plugin do Maven para compilar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -100,14 +85,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>view.App</mainClass> <!-- Certifique-se que esse é o nome correto -->
+                    <mainClass>view.App</mainClass> 
                 </configuration>
             </plugin>
-            
-
-          
-          
-          <plugin>
+             <!-- Plugin para criar o jar executavel -->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <executions>
@@ -126,9 +108,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            
-                
+            </plugin>    
         </plugins>
     </build>
 </project>

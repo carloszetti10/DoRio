@@ -32,11 +32,17 @@ Gera um relatório em PDF com todas as retiradas realizadas, incluindo o nome do
 - **Backend**: Java
 - **Banco de Dados**: PostgresSql
 
-![Tela Login](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/2.png)
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/1.png)
 
-![Tela Login](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/2.png)
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/2.png)
 
-![Tela Login](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/2.png)
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/3.png)
 
-![Tela Login](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/2.png)
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/4.png)
+
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/5.png)
+
+![Tela](https://github.com/carloszetti10/DoRio/blob/main/src/main/resources/img/icons/6.png)
+
+
 
